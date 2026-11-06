@@ -36,6 +36,7 @@
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', String(!expanded));
     letter.hidden = expanded;
+    updateProgress();
     button.querySelector('.button-label').textContent = expanded ? '手紙をひらく' : '手紙をとじる';
     if (!expanded) {
       letter.scrollIntoView({ behavior: reduceMotion ? 'instant' : 'smooth', block: 'nearest' });
