@@ -17,6 +17,21 @@ figure{margin:0}.letter-photo{max-width:510px;margin:55px auto 0;padding:12px 12
 @media(max-width:650px){.cat-print:nth-child(3) img{aspect-ratio:3/4;object-fit:contain;background:#e3dbce}.place-wide .photo-frame{height:370px}.place-wide img{object-position:50% 42%}.interlude img{object-position:50% 65%}}
 /* Keep both faces in the new tall call screenshot, without stretching it. */
 .memory-photo-0396 .memory-image{aspect-ratio:1/2}.memory-photo-0396 img{width:112%;height:auto;left:-1%;top:-8%}
-/* The personal letter lives here, once, behind its envelope button. */
-.letter-envelope{margin:65px auto 55px;padding:45px 35px;text-align:center;max-width:760px}.letter-envelope .secret-letter{text-align:left}.letter-envelope .letter-body{width:auto;margin:0;max-width:100%}.letter-envelope .letter-message-heading{font-size:28px;font-weight:400;line-height:1.95;letter-spacing:.08em;margin:28px 0 35px;overflow-wrap:anywhere}.letter-envelope .letter-message-heading em{color:#c7b688}.letter-envelope .letter-text{font-size:13px;line-height:2.6}.letter-envelope .letter-text p{font-size:inherit;line-height:inherit;margin:0 0 25px}.letter-envelope .signature{text-align:right}.letter-envelope .letter-button{max-width:100%;min-width:min(250px,100%)}
-@media(max-width:650px){.letter-envelope{margin:40px auto;padding:35px 20px}.letter-envelope .letter-message-heading{font-size:23px;letter-spacing:.04em}.letter-envelope .letter-text{font-size:12px;line-height:2.5}.letter-envelope .signature{font-size:25px}.letter-envelope .secret-letter{margin-top:30px;padding-top:30px}}
+/* Personal letter: a centered invitation and an ivory sheet, independent of the old surprise section. */
+.letter-envelope{width:100%;max-width:760px;margin:65px auto 55px;padding:0;background:transparent;color:var(--ink);text-align:center}
+.letter-envelope>.star{display:block;color:var(--gold);font-size:42px;line-height:1.4}
+.letter-envelope>.small-italic{color:var(--gold);margin:18px 0 24px}
+.letter-envelope>h2{margin:0;font-size:28px;font-weight:400;line-height:1.9;letter-spacing:.08em}
+.letter-envelope>.surprise-intro{margin:24px 0 30px;font-size:13px;line-height:2.3}
+.letter-envelope .letter-button{color:var(--ink);background:transparent;border-color:var(--gold);min-width:0;width:min(100%,300px);max-width:100%;padding:18px 25px}
+.letter-envelope .letter-button:hover{background:#eae5d8;color:var(--ink)}
+.letter-envelope .secret-letter{width:100%;margin:40px auto 0;padding:clamp(24px,5vw,48px);border:1px solid var(--line);background:#fffcf5;color:var(--ink);text-align:left;box-shadow:0 12px 35px #29372e08}
+.letter-envelope .letter-body{width:100%;max-width:640px;margin:0 auto}
+.letter-envelope .letter-body>.small-italic{display:block;font-size:25px;line-height:1.6;color:var(--gold)}
+.letter-envelope .letter-message-heading{margin:28px 0 34px;font-size:clamp(21px,2.3vw,28px);font-weight:400;line-height:1.95;letter-spacing:.04em;overflow-wrap:anywhere;text-wrap:balance}
+.letter-envelope .letter-message-heading em{color:var(--gold)}
+.letter-envelope .letter-text{font-size:14px;line-height:2.5;letter-spacing:.04em;overflow-wrap:anywhere;text-wrap:balance}
+.letter-envelope .letter-text p{font-size:inherit;line-height:inherit;margin:0 0 26px}
+.letter-envelope .letter-text p:last-child{margin-bottom:0}
+.letter-envelope .signature{text-align:right;color:var(--gold);font-size:29px;margin-top:32px;line-height:1.5}
+@media(max-width:650px){.letter-envelope{margin:45px auto}.letter-envelope>h2{font-size:24px}.letter-envelope>.surprise-intro{font-size:12px}.letter-envelope .secret-letter{margin-top:30px;padding:28px 20px}.letter-envelope .letter-body>.small-italic{font-size:23px}.letter-envelope .letter-text{font-size:12px;line-height:2.5;letter-spacing:.02em}.letter-envelope .signature{font-size:25px}}
